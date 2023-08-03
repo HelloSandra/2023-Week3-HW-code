@@ -1,0 +1,425 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*************************/
+*{
+    outline: 1px solid blue;
+}
+a{
+    text-decoration: none;
+}
+
+/***header***/
+.header-bg{
+    background: #AA0601;
+}
+.header{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+/**header-logo**/
+.header img{
+    max-width: 80px;
+}
+/**header-選單**/
+.header-list{
+    display: flex;
+}
+.header-list li{
+    margin-left: 64px;
+}
+.header-list a{
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.header-list a:hover{
+    border-bottom: 3px solid #FFFFFF;
+}
+
+/***banner***/
+.banner-bg{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
+    background-size: cover;
+}
+.banner-bg .banner-content{
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: right;
+}
+.banner-bg .banner-content p{
+    color: #650300;
+    font-size: 36px;
+}
+.banner-bg .banner-content h2{
+    color: #650300;
+    font-size: 64px;
+    font-weight: bold;
+}
+.banner-bg .banner-content a{
+    color: #FFFFFF;
+    background: #AA0601;
+    font-size: 20px;
+    padding: 6px 12px;
+    display: inline-block;    
+}
+.banner-bg .banner-content a:hover{
+    color: #AA0601;
+    background: #FFFFFF;
+}
+
+/***service***/
+.service-bg{
+    background: #FBF2F2;
+}
+.service-bg .service{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+.service-bg .service h2{
+    color: #650300;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+.service-bg .service .service-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+.service-bg .service .service-list li{
+    max-width: 306px;
+}
+.service-bg .service .service-list img{
+    display: block;
+    margin: auto;
+}
+.service-bg .service .service-list h3{
+    color: #650300;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 24px 0 8px 0;
+}
+.service-bg .service .service-list p{
+    line-height: 24px;
+}
+
+/***classic***/
+.classic{
+    max-width: 1280px;
+    margin: 0 auto;  
+    padding: 80px 0;
+}
+.classic h2{
+    color: #650300;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 48px;
+}
+.classic .classic-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.classic .classic-list li{
+    max-width: 416px;
+}
+.classic .classic-list img{
+    width: 100%;
+    margin-bottom: 8px;
+}
+.classic .classic-list h3{
+    color: #AA0601;
+    font-size: 48px;
+    text-align: center;
+    font-family: Roboto, Black Italic;
+}
+
+/***brand***/
+.brand-bg{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
+    background-size: cover;
+}
+.brand-bg .brand{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+.brand-bg .brand h2{
+    color: #FFFFFF;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 48px;
+}
+.brand-bg .brand .brand-list{
+    display: flex;
+}
+.brand-bg .brand .brand-list li{
+    max-width: 648px;
+}
+.brand-bg .brand .brand-list img{
+    width: 100%;
+}
+.brand-bg .brand .brand-list h3{
+    color: #AA0601;
+    font-size: 48px;
+    background: #FFFFFF;
+    text-align: center;
+}
+
+/***customer***/
+.customer{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+.customer h2{
+    color: #650300;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 48px;
+}
+.customer .customer-list{
+    display: flex;
+    justify-content: space-between;
+}
+.customer .customer-list li{
+    max-width: 306px;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+    box-shadow: 0px 2px 6px #00000029;
+}
+.customer .customer-list img{
+    width: 100%;
+}
+.customer .customer-list .customer-content{
+    height: 205px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+}
+.customer .customer-list .customer-content h4{
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.customer .customer-list .customer-content p{
+    line-height: 24px;
+}
+.customer .customer-list .customer-content span{
+    color: #707070;
+    font-size: 14px;
+}
+
+/***contact***/
+.contact-bg{
+    background: #FBF2F2;
+}
+.contact{
+    max-width: 636px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+.contact h2{
+    color: #650300;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 48px;
+}
+.contact p{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 24px;
+}
+.contact h5{
+    margin-bottom: 8px;
+}
+.contact .write{
+    display: block;
+    margin-bottom: 16px;
+    background: #FBF2F2;
+    width: 90%; /*為何會超出父層*/
+}
+.contact .btn{
+    display: block;
+    color: #FFFFFF;
+    font-weight: bold;
+    background: #AA0601;
+    padding: 16px 176px;
+    margin: auto;
+    margin-top: 48px;
+    width: 100%;
+}
+
+/***footer***/
+.footer-bg{
+    background: #AA0601;
+}
+.footer{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+/**表尾選單+社群**/
+.footer .list-social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+/**表尾選單**/
+.footer .list-social .footer-list{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .list-social .footer-list li{
+    margin-right: 48px;
+}
+.footer .list-social .footer-list a{
+    color: #FFFFFF;
+}
+.footer .list-social .footer-list a:hover{
+    border-bottom: 3px solid #FFFFFF;
+}
+/**社群**/
+.footer .list-social .social img{
+    max-width: 48px;
+    margin-left: 32px;
+}
+/**電話+信箱**/
+.footer .phone-mail{
+    margin-bottom: 24px; /*64/2-8=24*/
+}
+.footer .phone-mail li{
+    color: #FFFFFF;
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+/**版權+政策**/
+.footer .copyright-policy{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #FFFFFF;
+    padding: 32px 0;
+}
+.footer .copyright-policy p{
+    color: #FFFFFF;
+}
+/**政策**/
+.footer .copyright-policy .policy{
+    display: flex;
+}
+.footer .copyright-policy .policy p{
+    margin-left: 48px;
+}
+
+/******************響應式RWD******************/
+@media(max-width:768px){
+    .classic .classic-list{
+        justify-content: center;
+    }
+    .classic .classic-list li{
+        margin-bottom: 24px;
+    }
+    .brand-bg .brand .brand-list{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .brand-bg .brand .brand-list li{
+        max-width: 696px;
+        margin-bottom: 24px;
+    }
+    .customer .customer-list{
+        flex-wrap: wrap;
+    }
+    .customer .customer-list li{
+        max-width: 336px;
+        margin-bottom: 24px;
+    }
+}
+@media(max-width:376px){
+    .header{
+        flex-wrap: wrap;
+    }
+    .header-list{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .header-list li{
+        width: 50%;
+        text-align: center;
+        margin: 0;
+    }
+    .service-bg .service h2, .classic h2, .brand-bg .brand h2, .customer h2, .contact h2{
+        font-size: 24px;
+    }
+    .service-bg .service .service-list, .customer .customer-list{
+        justify-content: center;
+    }
+    .footer .list-social .footer-list{
+        display: none;
+    }
+    .footer .copyright-policy{
+        flex-wrap: wrap;
+    }
+    .footer .copyright-policy .policy{
+        flex-direction: column;
+    }
+    .footer .copyright-policy .policy p{
+        margin: 8px 0 0 0;
+    }
+}
